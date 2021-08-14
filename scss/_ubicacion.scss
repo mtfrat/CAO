@@ -1,0 +1,533 @@
+.textoImagen {
+  h1 {
+    position: relative;
+    bottom: 350px;
+  }
+}
+
+#logo {
+  img {
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      position: relative;
+      top: 30px;
+      right: 25px;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      position: relative;
+      top: 50px;
+      right: 40px;
+    }
+  }
+}
+
+nav {
+  button {
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      position: relative;
+      top: 30px;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      position: relative;
+      top: 50px;
+      right: 40px;
+    }
+  }
+}
+
+.navbar {
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    position: relative;
+    bottom: 40px;
+    z-index: 999;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    position: relative;
+    bottom: 50px;
+    z-index: 999;
+  }
+  @media only screen and (min-width: 1025px) {
+    a {
+      margin: 5px;
+    }
+  }
+}
+
+.navbar-collapse {
+  padding: 20px;
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    height: 200px;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    height: 300px;
+  }
+}
+
+.diseñoCarousel {
+  padding: 0px;
+}
+
+.contenido {
+  &__tienda {
+    width: 100%;
+    margin: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    &--titulo {
+      h2 {
+        text-align: center;
+        margin-top: 40px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        justify-content: center;
+
+        @media only screen and (min-width: 0px) and (max-width: 767px) {
+          margin-top: 40px;
+          margin-right: 20px;
+          margin-bottom: 20px;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  &__informativo {
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      margin-top: 20px;
+      margin-right: 0px;
+      margin-bottom: 20px;
+      margin-left: 0px;
+      text-align: center;
+      &--texto {
+        p {
+          text-align: left;
+        }
+      }
+    }
+    @media only screen and (min-width: 1025px) {
+      margin-top: 50px;
+      margin-right: 0px;
+      margin-bottom: 10px;
+      margin-left: 0px;
+      &--texto {
+        margin-top: 20px;
+        margin-right: 0px;
+        margin-bottom: 50px;
+        margin-left: 0px;
+        padding: 5px;
+        position: relative;
+        top: 20px;
+        text-align: left;
+      }
+      &--imagen {
+        img {
+          position: relative;
+          left: 15px;
+        }
+      }
+    }
+  }
+  &__instalaciones {
+    @media only screen and (min-width: 1025px) {
+      margin-top: 50px;
+      margin-right: 0px;
+      margin-bottom: 50px;
+      margin-left: 0px;
+      &--texto {
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 50px;
+        margin-left: 0px;
+        padding: 5px;
+        position: relative;
+        top: 20px;
+        text-align: left;
+      }
+      &--imagen {
+        img {
+          position: relative;
+          left: 15px;
+        }
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      h2 {
+        text-align: center;
+      }
+      margin-top: 20px;
+      margin-right: 0px;
+      margin-bottom: 20px;
+      margin-left: 0px;
+    }
+  }
+  &__actividades {
+    @media only screen and (max-width: 767px) {
+      h2 {
+        text-align: center;
+      }
+    }
+    @media only screen and (min-width: 1025px) {
+      margin-top: 50px;
+      margin-right: 0px;
+      margin-bottom: 10px;
+      margin-left: 0px;
+      &--texto {
+        margin-top: 10px;
+        margin-right: 0px;
+        margin-bottom: 50px;
+        margin-left: 0px;
+        padding: 10px;
+        position: relative;
+        top: 20px;
+        text-align: left;
+      }
+      &--imagen {
+        img {
+          position: relative;
+          left: 15px;
+          padding: 10px;
+        }
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      margin-top: 20px;
+      margin-right: 0px;
+      margin-bottom: 20px;
+      margin-left: 0px;
+    }
+  }
+  &__contacto {
+    @media only screen and (min-width: 0px) and (max-width: 1024px) {
+      display: block;
+    }
+    h2 {
+      margin-top: 70px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      @media only screen and (min-width: 1025px) {
+        position: relative;
+        right: 50px;
+      }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        text-align: center;
+      }
+    }
+    &--datos {
+      border: solid black 2px;
+      width: 70%;
+      padding: 10px;
+      margin-top: 30px;
+      margin-right: 0px;
+      margin-bottom: 20px;
+      margin-left: 0px;
+      border-radius: 5px;
+      @media only screen and (min-width: 1025px) {
+        position: relative;
+        left: 50px;
+      }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        width: 85%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        width: 60%;
+      }
+    }
+    &--mapa {
+      width: auto;
+      margin-top: 50px;
+      margin-right: 0px;
+      margin-bottom: 20px;
+      margin-left: 0px;
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        width: 95%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+    &--formulario {
+      margin-top: 30px;
+      margin-right: 0px;
+      margin-bottom: 40px;
+      margin-left: 0px;
+      padding: 10px;
+      text-align: center;
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        padding: 0px;
+        width: 95%;
+        margin-right: auto;
+        margin-left: auto;
+        input {
+          padding: 10px;
+          width: 80%;
+        }
+        textarea {
+          width: 80%;
+        }
+      }
+    }
+  }
+  &__tienda {
+    &--imagenes {
+      .card {
+        margin-top: 20px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+        margin-left: 0px;
+        width: 350px;
+        height: 430px;
+        @media only screen and (min-width: 0px) and (max-width: 767px) {
+          width: 270px;
+          height: auto;
+          margin-right: auto;
+          margin-left: auto;
+        }
+        &-body {
+          padding: 5px;
+        }
+        &:hover {
+          transform: scale(1.1);
+          transition-delay: 1s;
+        }
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+  &__compra {
+    &--imagenes {
+      margin-top: 30px;
+      margin-right: 0px;
+      margin-bottom: 30px;
+      margin-left: 0px;
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        img {
+          display: block;
+          margin-right: auto;
+          margin-left: auto;
+        }
+      }
+    }
+    &--texto {
+      margin-top: 40px;
+      margin-right: 0px;
+      margin-bottom: 30px;
+      margin-left: 0px;
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        text-align: center;
+      }
+      @media only screen and (min-width: 1024px) {
+        position: relative;
+        left: 60px;
+      }
+      li {
+        margin-top: 20px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  @each $seccion in actividades, instalaciones {
+    .contenido__#{$seccion} {
+      p {
+        display: none;
+      }
+    }
+  }
+}
+
+.diseñoDesktop {
+  @media only screen and (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.diseñoMobile {
+  @media only screen and (min-width: 1025px) {
+    display: none;
+  }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
+
+@keyframes efectoError {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(36deg);
+  }
+  20% {
+    transform: rotate(72deg);
+  }
+  30% {
+    transform: rotate(108deg);
+  }
+  40% {
+    transform: rotate(144deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(216deg);
+  }
+  70% {
+    transform: rotate(252deg);
+  }
+  80% {
+    transform: rotate(288deg);
+  }
+  90% {
+    transform: rotate(324deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.mensaje {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 100px);
+  &__error {
+    text-align: center;
+    h1 {
+      margin: 10px;
+    }
+    img {
+      animation-name: efectoError;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-duration: 3s;
+      animation-delay: 1s;
+    }
+  }
+}
+
+.ubicacionPaddle {
+  @media only screen and (min-width: 1025px) {
+    .contenido__actividades {
+      &--texto {
+        text-align: right;
+      }
+      &--imagen {
+        position: relative;
+        right: 30px;
+      }
+    }
+  }
+}
+
+.ubicacionInstalaciones {
+  @media only screen and (min-width: 1025px) {
+    .contenido__instalaciones {
+      &--texto {
+        text-align: right;
+      }
+      &--imagen {
+        position: relative;
+        right: 30px;
+      }
+    }
+  }
+}
+
+@each $seccionFormulario in input, textarea {
+  .contenido__contacto--formulario #{$seccionFormulario} {
+    margin: 10px;
+    padding: 2px;
+  }
+}
+
+#logo {
+  img {
+    padding: 5px;
+  }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    width: 30%;
+  }
+}
+
+body {
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+footer {
+  padding: 0px !important;
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    margin: 0px;
+  }
+}
+
+.footer__estilo {
+  margin: 0px;
+  padding-top: 20px;
+  padding-right: 0px;
+  padding-bottom: 3px;
+  padding-left: 0px;
+  &--pagina {
+    position: relative;
+    top: 10px;
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
+  &--cao {
+    h3 {
+      padding: 15px;
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        text-align: center;
+      }
+    }
+  }
+  i {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.ubicacionRedes {
+  display: flex;
+  i {
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+}
+
+// Google maps responsive
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 400px; /*Reduce este valor si el mapa fuera muy alto, por ejemplo 250px, puedes usar porcentajes, 50%*/
+  position: relative;
+  height: 0;
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}

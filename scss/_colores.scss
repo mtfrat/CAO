@@ -1,0 +1,167 @@
+$colorPrincipal: #1c364d;
+$colorSecundario: #ffffff;
+$colorTwitter: #00acee;
+$colorWhatsapp: #25d366;
+
+// Map-get
+$estiloColores: (
+  azul: $colorPrincipal,
+  blanco: $colorSecundario,
+  twitter: $colorTwitter,
+  whatsapp: $colorWhatsapp,
+);
+
+.header__general {
+  background-color: map-get($estiloColores, azul);
+}
+
+.navbar {
+  background-color: map-get($estiloColores, azul) !important;
+  a {
+    color: map-get($estiloColores, blanco) !important;
+    @media only screen and (min-width: 1025px) {
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+#seccionActual {
+  @media only screen and (min-width: 1025px) {
+    color: map-get($estiloColores, azul) !important;
+    background-color: map-get($estiloColores, blanco);
+    border-radius: 15px;
+  }
+}
+
+.footer {
+  background-color: map-get($estiloColores, azul);
+}
+
+.footer__estilo--pagina {
+  a {
+    color: map-get($estiloColores, blanco);
+  }
+}
+
+.contenido {
+  &__tienda {
+    &--titulo {
+      color: map-get($estiloColores, azul);
+    }
+    .card-body {
+      color: map-get($estiloColores, azul);
+    }
+  }
+  &__contacto {
+    h2 {
+      color: map-get($estiloColores, azul);
+    }
+    &--datos {
+      color: map-get($estiloColores, blanco);
+      background-color: map-get($estiloColores, azul);
+    }
+    &--formulario {
+      h3 {
+        color: map-get($estiloColores, blanco);
+      }
+      background-color: map-get($estiloColores, azul);
+      border-radius: 10px;
+    }
+  }
+  &__compra {
+    h2 {
+      color: map-get($estiloColores, azul);
+    }
+    input {
+      color: map-get($estiloColores, blanco);
+      background-color: map-get($estiloColores, azul);
+      border-radius: 5px;
+    }
+  }
+}
+
+@each $seccion in informativo, actividades, instalaciones {
+  .contenido__#{$seccion}--texto {
+    color: map-get($estiloColores, azul);
+  }
+}
+
+.carousel-inner {
+  h1 {
+    background-color: rgba($color: #000000, $alpha: 0.5);
+  }
+}
+
+.footer__estilo {
+  h3 {
+    color: map-get($estiloColores, blanco);
+  }
+  p {
+    color: map-get($estiloColores, blanco);
+    a {
+      color: map-get($estiloColores, blanco);
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+// Estilo de iconos footer
+
+.twitter {
+  color: map-get($estiloColores, twitter);
+  &:hover {
+    color: map-get($estiloColores, twitter);
+  }
+}
+
+.whatsapp {
+  color: map-get($estiloColores, whatsapp);
+  &:hover {
+    color: map-get($estiloColores, whatsapp);
+  }
+}
+
+.facebook {
+  color: map-get($estiloColores, blanco);
+  &:hover {
+    color: map-get($estiloColores, blanco);
+  }
+}
+
+.instagram {
+  i {
+    background: linear-gradient(
+      45deg,
+      #405de6,
+      #5851db,
+      #833ab4,
+      #c13584,
+      #e1306c,
+      #fd1d1d
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+.estiloBoton {
+  color: map-get($estiloColores, azul);
+  background-color: map-get($estiloColores, blanco);
+  border-radius: 5px;
+  width: 10%;
+  height: 40px;
+  padding: 10px;
+}
+
+.mensaje {
+  &__error {
+    h1 {
+      color: map-get($estiloColores, azul);
+    }
+  }
+}

@@ -1,0 +1,232 @@
+$fuenteMontserrat: "Montserrat", sans-serif;
+
+$estiloFuente: (
+  familia: $fuenteMontserrat,
+  0.9: 0.9rem,
+  1: 1rem,
+  1.5: 1.5rem,
+  2: 2rem,
+  2.5: 2.5rem,
+  3: 3rem,
+  4: 4rem,
+  4.5: 4.5rem,
+  5: 5rem,
+);
+
+html {
+  font: {
+    size: 90%;
+  }
+}
+
+.textoImagen {
+  h1 {
+    font: {
+      size: map-get($estiloFuente, 5);
+      family: map-get($estiloFuente, familia);
+    }
+  }
+}
+
+.header__general {
+  font: {
+    family: map-get($estiloFuente, familia);
+  }
+}
+
+.navbar-nav {
+  a {
+    font: {
+      size: map-get($estiloFuente, 2);
+    }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      font: {
+        size: map-get($estiloFuente, 1);
+      }
+    }
+  }
+}
+
+.footer__estilo {
+  font-family: map-get($estiloFuente, familia);
+  &--redes {
+    h3 {
+      font: {
+        size: map-get($estiloFuente, 3);
+      }
+    }
+    i {
+      font: {
+        size: map-get($estiloFuente, 4.5);
+      }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        font: {
+          size: map-get($estiloFuente, 4);
+        }
+      }
+    }
+  }
+  &--pagina {
+    font: {
+      family: map-get($estiloFuente, familia);
+      size: map-get($estiloFuente, 1.5);
+    }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      font: {
+        size: map-get($estiloFuente, 1.5);
+      }
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      font: {
+        size: map-get($estiloFuente, 1.5);
+      }
+    }
+    h3 {
+      font: {
+        size: map-get($estiloFuente, 2);
+      }
+    }
+  }
+  &--cao {
+    h3 {
+      font: {
+        size: map-get($estiloFuente, 2);
+      }
+    }
+  }
+}
+
+@each $seccion in informativo, actividades {
+  .contenido__#{$seccion} {
+    font-family: map-get($estiloFuente, familia);
+    p {
+      font: {
+        size: map-get($estiloFuente, 1.5);
+      }
+    }
+    h2 {
+      font: {
+        size: map-get($estiloFuente, 5);
+      }
+    }
+  }
+}
+
+.contenido__informativo--texto {
+  @media only screen and (max-width: 767px) {
+    h2 {
+      font-size: map-get($estiloFuente, 4);
+    }
+  }
+}
+
+.contenido {
+  &__contacto {
+    font-family: map-get($estiloFuente, familia);
+    h2 {
+      font-size: map-get($estiloFuente, 3);
+    }
+    &--datos {
+      font: {
+        size: map-get($estiloFuente, 2.5);
+      }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        font: {
+          size: map-get($estiloFuente, 1.5);
+        }
+      }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        font: {
+          size: map-get($estiloFuente, 2);
+        }
+      }
+    }
+    &--formulario {
+      h3 {
+        font: {
+          size: map-get($estiloFuente, 3);
+        }
+      }
+      input {
+        font: {
+          size: map-get($estiloFuente, 1);
+        }
+      }
+    }
+  }
+  &__instalaciones {
+    font-family: map-get($estiloFuente, familia);
+    p {
+      font: {
+        size: map-get($estiloFuente, 1.5);
+      }
+    }
+    h2 {
+      font: {
+        size: map-get($estiloFuente, 4);
+      }
+    }
+  }
+  &__tienda {
+    &--titulo {
+      h2 {
+        font: {
+          size: map-get($estiloFuente, 4);
+          family: map-get($estiloFuente, familia);
+        }
+        @media only screen and (min-width: 0px) and (max-width: 767px) {
+          font-size: map-get($estiloFuente, 3);
+        }
+      }
+    }
+    &--imagenes {
+      font: {
+        size: map-get($estiloFuente, 2);
+        family: map-get($estiloFuente, familia);
+      }
+    }
+  }
+  &__compra {
+    &--texto {
+      font-size: map-get($estiloFuente, 1.5);
+      font-family: map-get($estiloFuente, familia);
+      h2 {
+        font-size: map-get($estiloFuente, 4);
+      }
+    }
+  }
+}
+
+.estiloBoton {
+  font: {
+    size: map-get($estiloFuente, 1);
+    family: map-get($estiloFuente, familia);
+  }
+}
+
+.mensaje {
+  &__error {
+    font-family: map-get($estiloFuente, familia);
+    h1 {
+      font-size: map-get($estiloFuente, 3);
+    }
+    font-size: map-get($estiloFuente, 1.5);
+  }
+}
+
+/*----------Diseño placeholder-----------*/
+@each $navegador in -webkit-input-, -moz- {
+  *::#{$navegador}placeholder {
+    font: {
+      family: map-get($estiloFuente, familia);
+    }
+  }
+}
+
+@each $navegador in -ms-, -moz- {
+  *:#{$navegador}placeholder {
+    font: {
+      family: map-get($estiloFuente, familia);
+    }
+  }
+}
