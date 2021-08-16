@@ -41,7 +41,12 @@ html {
     }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
       font: {
-        size: map-get($estiloFuente, 1);
+        size: map-get($estiloFuente, 1.5);
+      }
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      font: {
+        size: map-get($estiloFuente, 1.5);
       }
     }
   }
@@ -184,6 +189,11 @@ html {
         size: map-get($estiloFuente, 2);
         family: map-get($estiloFuente, familia);
       }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        font: {
+          size: map-get($estiloFuente, 1.5);
+        }
+      }
     }
   }
   &__compra {
@@ -192,6 +202,9 @@ html {
       font-family: map-get($estiloFuente, familia);
       h2 {
         font-size: map-get($estiloFuente, 4);
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+          font-size: map-get($estiloFuente, 3);
+        }
       }
     }
   }

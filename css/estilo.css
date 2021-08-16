@@ -9,8 +9,12 @@
     @media only screen and (min-width: 1025px) {
       .navbar a:hover {
         transform: scale(1.1); } }
+  .navbar-light .navbar-toggler {
+    background-color: #ede8c4; }
+    .navbar-light .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(28,54,77, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 768px) {
   #seccionActual {
     color: #1c364d !important;
     background-color: #ffffff;
@@ -117,7 +121,10 @@ html {
   font-size: 2rem; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .navbar-nav a {
-      font-size: 1rem; } }
+      font-size: 1.5rem; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .navbar-nav a {
+      font-size: 1.5rem; } }
 
 .footer__estilo {
   font-family: "Montserrat", sans-serif; }
@@ -194,12 +201,18 @@ html {
 .contenido__tienda--imagenes {
   font-size: 2rem;
   font-family: "Montserrat", sans-serif; }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .contenido__tienda--imagenes {
+      font-size: 1.5rem; } }
 
 .contenido__compra--texto {
   font-size: 1.5rem;
   font-family: "Montserrat", sans-serif; }
   .contenido__compra--texto h2 {
     font-size: 4rem; }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      .contenido__compra--texto h2 {
+        font-size: 3rem; } }
 
 .estiloBoton {
   font-size: 1rem;
@@ -224,43 +237,37 @@ html {
 *:-moz-placeholder {
   font-family: "Montserrat", sans-serif; }
 
-.textoImagen h1 {
-  position: relative;
-  bottom: 350px; }
-
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  #logo img {
+@media only screen and (min-width: 1024px) {
+  .textoImagen h1 {
     position: relative;
-    top: 30px;
-    right: 25px; } }
+    bottom: 350px; } }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  #logo img {
-    position: relative;
-    top: 50px;
-    right: 40px; } }
+@media only screen and (max-width: 1024px) {
+  .textoImagen h1 {
+    display: none; } }
+
+#logo img {
+  padding: 5px; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    #logo img {
+      position: relative;
+      top: 30px;
+      right: 25px;
+      width: 30%; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #logo img {
+      position: relative;
+      right: 40px; } }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   nav button {
     position: relative;
     top: 30px; } }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  nav button {
-    position: relative;
-    top: 50px;
-    right: 40px; } }
-
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .navbar {
     position: relative;
     bottom: 40px;
-    z-index: 999; } }
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .navbar {
-    position: relative;
-    bottom: 50px;
     z-index: 999; } }
 
 @media only screen and (min-width: 1025px) {
@@ -271,10 +278,8 @@ html {
   padding: 20px; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .navbar-collapse {
-      height: 200px; } }
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .navbar-collapse {
-      height: 300px; } }
+      height: 250px;
+      text-align: center; } }
 
 .diseñoCarousel {
   padding: 0px; }
@@ -308,7 +313,7 @@ html {
     .contenido__informativo--texto p {
       text-align: left; } }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 768px) {
   .contenido__informativo {
     margin-top: 50px;
     margin-right: 0px;
@@ -327,7 +332,17 @@ html {
       position: relative;
       left: 15px; } }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .contenido__informativo {
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px; }
+    .contenido__informativo--imagen img {
+      position: relative;
+      top: 100px; } }
+
+@media only screen and (min-width: 768px) {
   .contenido__instalaciones {
     margin-top: 50px;
     margin-right: 0px;
@@ -346,6 +361,16 @@ html {
       position: relative;
       left: 15px; } }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .contenido__instalaciones {
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px; }
+    .contenido__instalaciones--imagen img {
+      position: relative;
+      top: 50px; } }
+
 @media only screen and (max-width: 767px) {
   .contenido__instalaciones {
     margin-top: 20px;
@@ -359,7 +384,7 @@ html {
   .contenido__actividades h2 {
     text-align: center; } }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 768px) {
   .contenido__actividades {
     margin-top: 50px;
     margin-right: 0px;
@@ -379,6 +404,16 @@ html {
       left: 15px;
       padding: 10px; } }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .contenido__actividades {
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px; }
+    .contenido__actividades--imagen img {
+      position: relative;
+      top: 50px; } }
+
 @media only screen and (max-width: 767px) {
   .contenido__actividades {
     margin-top: 20px;
@@ -386,7 +421,7 @@ html {
     margin-bottom: 20px;
     margin-left: 0px; } }
 
-@media only screen and (min-width: 0px) and (max-width: 1024px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .contenido__contacto {
     display: block; } }
 
@@ -395,10 +430,6 @@ html {
   margin-right: 0px;
   margin-bottom: 0px;
   margin-left: 0px; }
-  @media only screen and (min-width: 1025px) {
-    .contenido__contacto h2 {
-      position: relative;
-      right: 50px; } }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .contenido__contacto h2 {
       text-align: center; } }
@@ -412,10 +443,6 @@ html {
   margin-bottom: 20px;
   margin-left: 0px;
   border-radius: 5px; }
-  @media only screen and (min-width: 1025px) {
-    .contenido__contacto--datos {
-      position: relative;
-      left: 50px; } }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .contenido__contacto--datos {
       width: 85%;
@@ -423,7 +450,7 @@ html {
       margin-left: auto; } }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .contenido__contacto--datos {
-      width: 60%; } }
+      width: 70%; } }
 
 .contenido__contacto--mapa {
   width: auto;
@@ -436,6 +463,9 @@ html {
       width: 95%;
       margin-right: auto;
       margin-left: auto; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .contenido__contacto--mapa {
+      width: 80%; } }
 
 .contenido__contacto--formulario {
   margin-top: 30px;
@@ -469,6 +499,10 @@ html {
       height: auto;
       margin-right: auto;
       margin-left: auto; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .contenido__tienda--imagenes .card {
+      width: 270px;
+      height: auto; } }
   .contenido__tienda--imagenes .card-body {
     padding: 5px; }
   .contenido__tienda--imagenes .card:hover {
@@ -497,7 +531,7 @@ html {
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .contenido__compra--texto {
       text-align: center; } }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 768px) {
     .contenido__compra--texto {
       position: relative;
       left: 60px; } }
@@ -513,11 +547,11 @@ html {
   .contenido__instalaciones p {
     display: none; } }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
   .diseñoDesktop {
     display: none; } }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 767px) {
   .diseñoMobile {
     display: none; } }
 
@@ -532,23 +566,23 @@ html {
   0% {
     transform: rotate(0deg); }
   10% {
-    transform: rotate(36deg); }
+    transform: rotate(45deg); }
   20% {
-    transform: rotate(72deg); }
+    transform: rotate(90eg); }
   30% {
-    transform: rotate(108deg); }
+    transform: rotate(135deg); }
   40% {
-    transform: rotate(144deg); }
-  50% {
     transform: rotate(180deg); }
+  50% {
+    transform: rotate(225deg); }
   60% {
-    transform: rotate(216deg); }
+    transform: rotate(270deg); }
   70% {
-    transform: rotate(252deg); }
+    transform: rotate(315deg); }
   80% {
-    transform: rotate(288deg); }
+    transform: rotate(360deg); }
   90% {
-    transform: rotate(324deg); }
+    transform: rotate(360deg); }
   100% {
     transform: rotate(360deg); } }
 
@@ -570,14 +604,14 @@ html {
       animation-duration: 3s;
       animation-delay: 1s; }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 768px) {
   .ubicacionPaddle .contenido__actividades--texto {
     text-align: right; }
   .ubicacionPaddle .contenido__actividades--imagen {
     position: relative;
     right: 30px; } }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 768px) {
   .ubicacionInstalaciones .contenido__instalaciones--texto {
     text-align: right; }
   .ubicacionInstalaciones .contenido__instalaciones--imagen {
@@ -591,13 +625,6 @@ html {
 .contenido__contacto--formulario textarea {
   margin: 10px;
   padding: 2px; }
-
-#logo img {
-  padding: 5px; }
-
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  #logo {
-    width: 30%; } }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   body {
@@ -621,10 +648,11 @@ footer {
     top: 10px; }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
       .footer__estilo--pagina {
-        margin-bottom: 20px; } }
+        margin-bottom: 20px;
+        text-align: center; } }
   .footer__estilo--cao h3 {
     padding: 15px; }
-    @media only screen and (min-width: 0px) and (max-width: 767px) {
+    @media only screen and (min-width: 0px) and (max-width: 1024px) {
       .footer__estilo--cao h3 {
         text-align: center; } }
   .footer__estilo i:hover {
@@ -692,7 +720,7 @@ li {
   height: 100px; }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     #logo img {
-      height: auto;
+      height: 120px;
       width: auto; } }
 
 #logoError {
@@ -706,6 +734,10 @@ li {
   display: block;
   margin: auto; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .contenido__tienda--imagenes img {
+      width: 250px;
+      height: auto; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .contenido__tienda--imagenes img {
       width: 250px;
       height: auto; } }

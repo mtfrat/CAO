@@ -1,5 +1,6 @@
 $colorPrincipal: #1c364d;
 $colorSecundario: #ffffff;
+$colorLogo: #ede8c4;
 $colorTwitter: #00acee;
 $colorWhatsapp: #25d366;
 
@@ -7,6 +8,7 @@ $colorWhatsapp: #25d366;
 $estiloColores: (
   azul: $colorPrincipal,
   blanco: $colorSecundario,
+  logo: $colorLogo,
   twitter: $colorTwitter,
   whatsapp: $colorWhatsapp,
 );
@@ -25,10 +27,18 @@ $estiloColores: (
       }
     }
   }
+  &-light {
+    .navbar-toggler {
+      background-color: map-get($estiloColores, logo);
+      &-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(28,54,77, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      }
+    }
+  }
 }
 
 #seccionActual {
-  @media only screen and (min-width: 1025px) {
+  @media only screen and (min-width: 768px) {
     color: map-get($estiloColores, azul) !important;
     background-color: map-get($estiloColores, blanco);
     border-radius: 15px;
