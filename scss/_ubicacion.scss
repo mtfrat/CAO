@@ -4,7 +4,7 @@
       position: relative;
       bottom: 350px;
     }
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 1150px) {
       display: none;
     }
   }
@@ -50,7 +50,7 @@ nav {
 
 .navbar-collapse {
   padding: 20px;
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
+  @media only screen and (min-width: 0px) and (max-width: 1023px) {
     height: 250px;
     text-align: center;
   }
@@ -253,7 +253,7 @@ nav {
         margin-left: auto;
       }
       @media only screen and (min-width: 768px) and (max-width: 1024px) {
-        width: 70%;
+        width: 95%;
       }
     }
     &--mapa {
@@ -309,8 +309,10 @@ nav {
           margin-left: auto;
         }
         @media only screen and (min-width: 768px) and (max-width: 1024px) {
-          width: 270px;
+          width: 230px;
           height: auto;
+          margin-right: auto;
+          margin-left: auto;
         }
         &-body {
           padding: 5px;
@@ -347,7 +349,7 @@ nav {
       @media only screen and (min-width: 0px) and (max-width: 767px) {
         text-align: center;
       }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 1024px) {
         position: relative;
         left: 60px;
       }
@@ -372,13 +374,13 @@ nav {
 }
 
 .diseñoDesktop {
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     display: none;
   }
 }
 
 .diseñoMobile {
-  @media only screen and (min-width: 767px) {
+  @media only screen and (min-width: 768px) {
     display: none;
   }
   @media only screen and (min-width: 0px) and (max-width: 767px) {

@@ -242,7 +242,7 @@ html {
     position: relative;
     bottom: 350px; } }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1150px) {
   .textoImagen h1 {
     display: none; } }
 
@@ -276,7 +276,7 @@ html {
 
 .navbar-collapse {
   padding: 20px; }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
+  @media only screen and (min-width: 0px) and (max-width: 1023px) {
     .navbar-collapse {
       height: 250px;
       text-align: center; } }
@@ -450,7 +450,7 @@ html {
       margin-left: auto; } }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .contenido__contacto--datos {
-      width: 70%; } }
+      width: 95%; } }
 
 .contenido__contacto--mapa {
   width: auto;
@@ -501,8 +501,10 @@ html {
       margin-left: auto; } }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .contenido__tienda--imagenes .card {
-      width: 270px;
-      height: auto; } }
+      width: 230px;
+      height: auto;
+      margin-right: auto;
+      margin-left: auto; } }
   .contenido__tienda--imagenes .card-body {
     padding: 5px; }
   .contenido__tienda--imagenes .card:hover {
@@ -531,7 +533,7 @@ html {
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .contenido__compra--texto {
       text-align: center; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1024px) {
     .contenido__compra--texto {
       position: relative;
       left: 60px; } }
@@ -547,11 +549,11 @@ html {
   .contenido__instalaciones p {
     display: none; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .diseñoDesktop {
     display: none; } }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
   .diseñoMobile {
     display: none; } }
 
@@ -739,13 +741,17 @@ li {
       height: auto; } }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .contenido__tienda--imagenes img {
-      width: 250px;
+      width: 200px;
       height: auto; } }
 
 .contenido__compra--imagenes img {
   width: 450px;
   height: auto; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .contenido__compra--imagenes img {
+      width: 300px;
+      height: auto; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .contenido__compra--imagenes img {
       width: 300px;
       height: auto; } }
