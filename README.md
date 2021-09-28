@@ -4,4 +4,4 @@ Proyecto de página web de un club deportivo para el curso de desarrollo web de 
 
 Sitio responsive desarrollado para desktop, tablet y mobile. Las tecnologías utilizadas fueron HTML, CSS, SASS y Bootstrap 
 
-Se puede acceder a la página a través del siguiente link https://mtfrat.github.io/CAO/views/instalaciones.html
+Se puede acceder a la página a través del siguiente link https://mtfrat.github.io/CAO/index.html
